@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'attr_encrypted'
+require 'attr_encrypted/adapters/active_record'
+
 if defined?(ActiveRecord::Base)
   module AttrEncrypted
     module Adapters
